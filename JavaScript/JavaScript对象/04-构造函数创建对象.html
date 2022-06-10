@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+  // 构造函数就是把对象里面相同的一些属性和方法抽象出来封装到函数里面
+  // 利用构造函数创建对象
+  // 我们需要创建四大天王的对象  相同的属性：名字 年龄 性别 相同的方法：长歌
+  
+  //1构造函数 明星 泛指某一大类
+  //2.
+    function Star(uname,age,sex){
+      this.uname=uname;
+      this.age=age;
+      this.sex=sex;
+      this.sing=function(sang){
+        
+      }
+    }
+
+    var ldh=new Star('刘德华',18,'男');
+    console.log(ldh.name);
+    //1. 构造函数名字首字母要大写
+    //2.我们构造函数不需要return
+    //3.调用构造函数必须使用new
+    //4.我们只要new 函数名就创建了一个对象
+
+
+</script>
+
+</head>
+<body>
+  
+</body>
+</html>

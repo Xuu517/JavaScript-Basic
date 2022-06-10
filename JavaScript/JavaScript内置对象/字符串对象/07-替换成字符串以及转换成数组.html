@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //1.替换字符 replace('被替换的字符',"替换成的字符")
+    var str='lias';
+    console.log( str.replace('a','s'));
+
+    //有一个字符串"ancfgfsnfffff"，要求把里面的f换成*
+    var str="ancfgfsnfffff";
+    while(str.indexOf('f')!==-1){//一直循环
+      str= str.replace('f','*');
+    }
+    console.log(str);
+
+    //2.字符转化为数组  split('分隔符') 将join把数组转化为字符串
+    var str='red,black,blue';//字符串不用括号 用引号一整个隔开
+    console.log(str.split(','));//原字符串用什么隔开则写什么分隔符
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

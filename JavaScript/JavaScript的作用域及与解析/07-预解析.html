@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //1问
+    // console.log(num);输出错误
+    // 2问
+    console.log(num);
+    var num= 10;//undefined 坑1
+// 预解析：
+//     var num;
+//     console.log(num);
+//     num=10;
+    // 3问
+    f();
+    function f(){
+      console.log(11);
+    }//无论f()放前面还是最后都可以实现调用
+
+    //4问
+    fun();//放前面就会报错 坑2
+    var fun =function(){
+      console.log(111);
+    }
+
+    // var fun;
+    // fun();
+    // fun=function(){
+    //   console.log(111);
+    // }
+    // 1.我们js引擎运行js分成两部：预解析 代码执行
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

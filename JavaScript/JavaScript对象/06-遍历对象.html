@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //遍历对象
+    var obj={
+      name:'pink老师',
+      age:17,
+      sex:'男'
+    }
+    console.log(obj.name);
+    console.log(obj.age);
+    console.log(obj.sex);
+    //没有0123计数器不能用for循环
+
+    //for in可以遍历对象
+    //for(变量 in 对象)
+    for(var k in obj){
+      console.log(k);
+      console.log(obj[k]);
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
